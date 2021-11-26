@@ -1,0 +1,10 @@
+{
+  "integrationFolder": "cypress/tests",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "chromeWebSecurity": false,
+  "waitForAnimations": true,
+  "keystrokeDelay": 0,
+  "pageLoadTimeout": 80000,
+  "watchForFileChanges" : false
+}

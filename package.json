@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "cypress": "^9.1.0",
+    "dayjs": "^1.10.7",
+    "faker": "^5.5.3"
+  },
+  "scripts": {
+    "cypress_open": "npx cypress open",
+    "cypress_run": "npx cypress run --browser chrome --headless"
+  }
+}
