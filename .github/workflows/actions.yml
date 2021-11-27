@@ -4,8 +4,6 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.4.1
       - name: Checkout
         uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
@@ -13,10 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          browser: chrome
-          headless: true
-          record: true
-          parallel: true
+         cypress_run: npx cypress run --browser chrome --headless
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
