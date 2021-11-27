@@ -4,6 +4,8 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.1
       - name: Checkout
         uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
